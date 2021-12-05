@@ -1,0 +1,10 @@
+clc
+clear all
+
+for i=1:80
+    url='D:\Kuliah\Tugas Akhir\Skripsi\Data Bentuk\';
+    a=int2str(i);
+    b='\';
+    c=horzcat(url,a,b);
+    delete(horzcat(c,'Gbr A1-3.png'),horzcat(c,'Gbr A1-4.png'),horzcat(c,'Gbr A1-5.png'),horzcat(c,'Gbr A2-2.png'),horzcat(c,'Gbr A2-3.png'),horzcat(c,'Gbr A2-4.png'),horzcat(c,'Gbr A2-5.png'),horzcat(c,'Gbr A3-2.png'),horzcat(c,'Gbr A3-3.png'),horzcat(c,'Gbr A3-4.png'),horzcat(c,'Gbr A3-5.mat'),horzcat(c,'Gbr A4-3.mat'),horzcat(c,'Gbr A4-4.mat'),horzcat(c,'Gbr A4-5.mat'),horzcat(c,'Gbr A5-3.mat'),horzcat(c,'Gbr A5-4.mat'),horzcat(c,'Gbr A5-5.mat'),horzcat(c,'Gbr A6-2.mat'),horzcat(c,'Gbr A6-3.mat'),horzcat(c,'Gbr A6-4.mat'),horzcat(c,'Gbr A6-5.mat'),horzcat(c,'Gbr A7-3.mat'),horzcat(c,'Gbr A7-4.mat'),horzcat(c,'Gbr A7-5.mat'),horzcat(c,'Gbr A8-2.mat'),horzcat(c,'Gbr A8-3.mat'),horzcat(c,'Gbr A8-4.mat'),horzcat(c,'Gbr A8-5.mat'),horzcat(c,'Gbr A9-2.mat'),horzcat(c,'Gbr A9-3.mat'),horzcat(c,'Gbr A9-4.mat'),horzcat(c,'Gbr A9-5.mat'),horzcat(c,'Gbr B0-2.mat'),horzcat(c,'Gbr B0-3.mat'),horzcat(c,'Gbr B0-4.mat'),horzcat(c,'Gbr B0-5.mat'),horzcat(c,'Gbr B1-4.mat'),horzcat(c,'Gbr B1-5.mat'),horzcat(c,'Gbr B2-3.mat'),horzcat(c,'Gbr B2-4.mat'),horzcat(c,'Gbr B2-5.mat'),horzcat(c,'Gbr B3-4.mat'),horzcat(c,'Gbr B3-5.mat'),horzcat(c,'Gbr B4-3.mat'),horzcat(c,'Gbr B4-4.mat'),horzcat(c,'Gbr B4-5.mat'),horzcat(c,'Gbr B5-4.mat'),horzcat(c,'Gbr B5-5.mat'),horzcat(c,'Gbr B6-3.mat'),horzcat(c,'Gbr B6-4.mat'),horzcat(c,'Gbr B6-5.mat'),horzcat(c,'Gbr B7-4.mat'),horzcat(c,'Gbr B7-5.mat'),horzcat(c,'Gbr B8-3.mat'),horzcat(c,'Gbr B8-4.mat'),horzcat(c,'Gbr B8-5.mat'),horzcat(c,'Gbr B9-3.mat'),horzcat(c,'Gbr B9-4.mat'),horzcat(c,'Gbr B9-5.mat'),horzcat(c,'Gbr C0-3.mat'),horzcat(c,'Gbr C0-4.mat'),horzcat(c,'Gbr C0-5.mat'),horzcat(c,'Gbr C1-4.mat'),horzcat(c,'Gbr C1-5.mat'),horzcat(c,'Gbr C2-3.mat'),horzcat(c,'Gbr C2-4.mat'),horzcat(c,'Gbr C2-5.mat'),horzcat(c,'Gbr C4-2.mat'),horzcat(c,'Gbr C4-3.mat'),horzcat(c,'Gbr C4-4.mat'),horzcat(c,'Gbr C4-5.mat'),horzcat(c,'Gbr C5-2.mat'),horzcat(c,'Gbr C5-3.mat'),horzcat(c,'Gbr C5-4.mat'),horzcat(c,'Gbr C5-5.mat'))
+end
