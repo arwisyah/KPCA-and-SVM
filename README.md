@@ -23,4 +23,4 @@ Algoritma Penggunaan:
 3. Jalankan script "training"
 4. Jalankan script "testing"
 
-catatan: Setelah dilakukan percobaan pada data leave one (data yang tidak dikenali sama sekali oleh model, bahkan tidak dimasukkan pada saat testing, untuk mensimulasi data pada dunia nyata), parameter terbaik yang digunakan adalah parameter KPCA RBF dengan parameter sigma=10^-5, Kernel SVM polinomial p=5, parameter soft-margin SVM C=10-1 dengan akurasi sebesar 76%
+catatan: Setelah dilakukan percobaan pada data leave one (data yang tidak dikenali sama sekali oleh model, bahkan tidak dimasukkan pada saat testing, untuk mensimulasi data pada dunia nyata), parameter terbaik yang digunakan adalah parameter KPCA RBF dengan parameter sigma=10^-5, Kernel SVM polinomial p=5, parameter soft-margin SVM C=10^-1 dengan akurasi sebesar 76%
