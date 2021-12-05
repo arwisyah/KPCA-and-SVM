@@ -1,4 +1,4 @@
-# KPCA-and-SVM
+# DOKUMENTASI KPCA-and-SVM
 Tujuan: Agoritma klasifikasi dibuat untuk membuat model yang dapat mengenali tulisan huruf hijaiyah berdasarkan hurufnya (15 kelas huruf tunggal tanpa harakat dan tidak memperhatikan jumlah titik).
 
 Penjelasan masing-masing file:
