@@ -4,7 +4,7 @@ function [k]=vektorim(e)
 l=imread(e);
 l=double(l);
 
-%filter gambar menggukan gauss kernel (menghilangkan noise)
+%filter gambar menggunakan gauss kernel (menghilangkan noise)
 gauss_ker=[1 4 7 4 1;4 16 26 16 4; 7 26 41 26 7;4 16 26 16 4;1 4 7 4 1]/273;
 im_gauss=conv2(l,gauss_ker,'same');
 
