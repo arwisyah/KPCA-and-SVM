@@ -1,26 +1,50 @@
 # DOKUMENTASI KPCA-and-SVM
-Tujuan: Agoritma klasifikasi dibuat untuk membuat model yang dapat mengenali tulisan huruf hijaiyah berdasarkan hurufnya (15 kelas huruf tunggal tanpa harakat dan tidak memperhatikan jumlah titik).
 
-Penjelasan masing-masing file:
+Repositori ini berisi implementasi kode resmi untuk penelitian tugas akhir/skripsi saya yang berjudul **"Pengenalan tulisan tangan huruf hijaiyah menggunakan ekstraksi fitur KPCA dan algoritma klasifikasi SVM"**. Model ini dirancang untuk mendeteksi **15 kelas huruf tunggal** tanpa harakat dan tidak memperhatikan jumlah titik.
 
--Folder "Data Bentuk" berisikan file data image tulisan tangan huruf hijaiyah. Terdapat 80 folder (penulis), setiap penulis menuliskan 5 tulisan per huruf hijaiyah.
+---
 
--Function vektorim() digunakan untuk menghilangkan noise pada gambar menggunakan gauss kernel dan mentransformasi data gambar menjadi vektor.
+## 🎯 Tujuan Proyek
+Membangun model klasifikasi citra yang mampu mengenali dan mengelompokkan karakter tulisan tangan huruf hijaiyah secara tepat menggunakan kombinasi **Kernel Principal Component Analysis (KPCA)** untuk ekstraksi fitur dan **Support Vector Machine (SVM)** untuk klasifikasi.
 
--Script "Baca Data" digunakan untuk membaca data menggunakan function vektorim(), membagi data training dan testing, kernelisasi data, ekstraksi fitur KPCA menggunakan function matlab pca() lalu menyimpan dataset yang sudah siap dipakai dalam format .mat.
+## 📂 Struktur & Penjelasan File
 
--Function svm_train() digunakan untuk membuat model svm menggunakan function matlab quadprog().
+| Nama File / Folder | Deskripsi |
+| :--- | :--- |
+| 📁 **Data Bentuk** | Berisi file citra (*image*) tulisan tangan huruf hijaiyah. Terdiri dari 80 folder penulis, di mana setiap penulis menuliskan 5 sampel per huruf. |
+| 📄 **vektorim.m** *(Function)* | Berfungsi untuk menghilangkan *noise* pada gambar menggunakan **Gaussian Kernel** dan mentransformasi data gambar menjadi bentuk vektor. |
+| 📄 **Baca Data.m** *(Script)* | Membaca data menggunakan fungsi `vektorim()`, membagi data menjadi *training* dan *testing*, melakukan kernelisasi data, mengekstraksi fitur KPCA dengan fungsi bawaan MATLAB `pca()`, lalu menyimpan dataset siap pakai dalam format `.mat`. |
+| 📄 **svm_train.m** *(Function)* | Berfungsi untuk membuat model SVM menggunakan fungsi optimasi MATLAB `quadprog()`. |
+| 📄 **svm_test.m** *(Function)* | Berfungsi untuk memprediksi hasil klasifikasi dengan strategi *One Against One* (OAO). |
+| 📄 **training.m** *(Script)* | Digunakan untuk membangun model *multiclass* SVM dengan strategi *One Against One* menggunakan fungsi `svm_train()`. |
+| 📄 **testing.m** *(Script)* | Digunakan untuk menguji data *testing* menggunakan model yang diperoleh dari proses *training* dan memprediksi kelas menggunakan fungsi `svm_test()`. |
 
--Function svm_test() digunakan untuk memprediksi hasil klasifikasi dengan strategi One Against One.
+---
 
--Script "training" digunakan untuk membangun model multiclass svm dengan strategi One Against One menggunakan function svm_train.
+## 🚀 Alur Penggunaan
 
--Script "testing" digunakan untuk menguji data test menggunakan model multiclass svm yang diperoleh dari script "training" dan memprediksi kelas menggunakan function svm_test().
+Ikuti langkah-langkah berikut secara berurutan untuk menjalankan program:
 
-Algoritma Penggunaan:
-1. Tentukan parameter-parameter yang akan digunakan dalam melatih model serta parameter split dataset.
-2. Jalankan script "Baca Data"
-3. Jalankan script "training"
-4. Jalankan script "testing"
+1. **Konfigurasi Parameter:** Tentukan parameter-parameter yang akan digunakan dalam melatih model serta parameter pembagian (*split*) dataset.
+2. **Pra-pemrosesan Data:** Jalankan script `Baca Data.m`.
+3. **Pelatihan Model:** Jalankan script `training.m`.
+4. **Pengujian Model:** Jalankan script `testing.m`.
 
-catatan: Setelah dilakukan percobaan pada data leave one (data yang tidak dikenali sama sekali oleh model, bahkan tidak dimasukkan pada saat testing, untuk mensimulasi data pada dunia nyata), parameter terbaik yang digunakan adalah parameter KPCA RBF dengan parameter sigma=10^-5, Kernel SVM polinomial p=5, parameter soft-margin SVM C=10^-1 dengan akurasi sebesar 76%
+---
+
+## 📊 Hasil Percobaan & Parameter Terbaik
+
+Berdasarkan pengujian menggunakan metode *leave-one-out* (mensimulasikan data dunia nyata dengan data yang sama sekali tidak dikenali oleh model dan tidak dimasukkan saat pengujian), model ini menghasilkan **akurasi sebesar 76%** menggunakan kombinasi parameter terbaik berikut:
+
+* **Ekstraksi Fitur (KPCA):** RBF Kernel dengan parameter \(\sigma = 10^{-5}\)
+* **Klasifikasi (SVM):** Polinomial Kernel dengan derajat \(p = 5\)
+* **Soft-Margin (SVM):** Parameter penalti \(C = 10^{-1}\)
+
+---
+
+## 📚 Sitasi Skripsi
+
+Jika Anda menggunakan kode atau merujuk penelitian dalam repositori ini, silakan gunakan format sitasi berikut:
+
+### Format APA 7th Edition:
+> Syahdwinata, A. W. (2018). *Pengenalan tulisan tangan huruf hijaiyah menggunakan ekstraksi fitur KPCA dan algoritma klasifikasi SVM* (Thesis Diploma). UIN Sunan Gunung Djati Bandung. [https://uinsgd.ac.id](https://uinsgd.ac.id)
