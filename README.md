@@ -47,4 +47,10 @@ Berdasarkan pengujian menggunakan metode *leave-one-out* (mensimulasikan data du
 Jika Anda menggunakan kode atau merujuk penelitian dalam repositori ini, silakan gunakan format sitasi berikut:
 
 ### Format APA 7th Edition:
-> Syahdwinata, A. W. (2018). *Pengenalan tulisan tangan huruf hijaiyah menggunakan ekstraksi fitur KPCA dan algoritma klasifikasi SVM* (Thesis Diploma). UIN Sunan Gunung Djati Bandung. [https://digilib.uinsgd.ac.id](/https://digilib.uinsgd.ac.id/18853/)
+> Syahdwinata, A. W. (2018). *Pengenalan tulisan tangan huruf hijaiyah menggunakan ekstraksi fitur KPCA dan algoritma klasifikasi SVM* (Thesis Diploma). UIN Sunan Gunung Djati Bandung. [https://uinsgd.ac.id](https://uinsgd.ac.id)
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah **MIT License** - lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
