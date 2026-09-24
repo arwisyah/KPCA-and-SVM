@@ -45,7 +45,7 @@ Berdasarkan pengujian menggunakan metode *leave-one-out* (mensimulasikan data du
 
 ---
 
-## 📚 Sitasi Skripsi
+## 📚 Sitasi
 
 Jika Anda menggunakan kode atau merujuk penelitian dalam repositori ini, silakan gunakan format sitasi berikut:
 
