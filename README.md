@@ -7,6 +7,9 @@ Repositori ini berisi implementasi kode untuk penelitian berjudul **"Pengenalan 
 ## 🎯 Tujuan Proyek
 Membangun model klasifikasi citra yang mampu mengenali dan mengelompokkan karakter tulisan tangan huruf hijaiyah secara tepat menggunakan kombinasi **Kernel Principal Component Analysis (KPCA)** untuk ekstraksi fitur dan **Support Vector Machine (SVM)** untuk klasifikasi.
 
+## 💻 Prasyarat Sistem (Requirements)
+* **MATLAB R2013a**.
+
 ## 📂 Struktur & Penjelasan File
 
 | Nama File / Folder | Deskripsi |
