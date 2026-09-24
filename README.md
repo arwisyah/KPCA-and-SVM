@@ -1,6 +1,6 @@
 # DOKUMENTASI KPCA-and-SVM
 
-Repositori ini berisi implementasi kode resmi untuk penelitian tugas akhir/skripsi saya yang berjudul **"Pengenalan tulisan tangan huruf hijaiyah menggunakan ekstraksi fitur KPCA dan algoritma klasifikasi SVM"**. Model ini dirancang untuk mendeteksi **15 kelas huruf tunggal** tanpa harakat dan tidak memperhatikan jumlah titik.
+Repositori ini berisi implementasi kode untuk penelitian berjudul **"Pengenalan tulisan tangan huruf hijaiyah menggunakan ekstraksi fitur KPCA dan algoritma klasifikasi SVM"**. Model ini dirancang untuk mendeteksi **15 kelas huruf tunggal** tanpa harakat dan tidak memperhatikan jumlah titik.
 
 ---
 
